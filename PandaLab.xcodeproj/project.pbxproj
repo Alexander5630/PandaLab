@@ -15,6 +15,7 @@
 		EB458082232811390062D3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB458080232811390062D3F3 /* Main.storyboard */; };
 		EB4580842328113E0062D3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB4580832328113E0062D3F3 /* Assets.xcassets */; };
 		EB4580872328113E0062D3F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4580852328113E0062D3F3 /* LaunchScreen.storyboard */; };
+		EB45808D2328166E0062D3F3 /* PandaLab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB45808C2328166E0062D3F3 /* PandaLab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		EB4580832328113E0062D3F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB4580862328113E0062D3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB4580882328113E0062D3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB45808C2328166E0062D3F3 /* PandaLab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandaLab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				EB45805F232810020062D3F3 /* PandaLab.h */,
 				EB458060232810020062D3F3 /* Info.plist */,
+				EB45808C2328166E0062D3F3 /* PandaLab.swift */,
 			);
 			path = PandaLab;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					EB45805B232810020062D3F3 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					EB458064232810020062D3F3 = {
 						CreatedOnToolsVersion = 10.3;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB45808D2328166E0062D3F3 /* PandaLab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		EB458071232810020062D3F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pe.com.pandalab.PandaLab;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		EB458072232810020062D3F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		EB458074232810020062D3F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PandaLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		EB458075232810020062D3F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PandaLabTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
